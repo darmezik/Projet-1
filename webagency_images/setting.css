@@ -1,0 +1,577 @@
+@font-face
+{
+	font-family: 'fontAwesome';
+	src: url('fonts/fontawesome-webfont.eot');
+	src: url('fonts/fontAwesome.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/fontawesome-webfont.ttf') format('truetype'),
+		 url('fonts/fontawesome-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'robotoMedium';
+	src: url('fonts/Roboto-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+    font-family: fontAwesome, serif;
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+#menu
+{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+#menu nav ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu nav ul a
+{
+    text-decoration: none;
+    color: grey;
+    padding: 1.8em;
+}
+
+#menu nav ul a:hover
+{
+    color: black;
+    border-top: 2px solid rgb(49,161,192);
+}
+
+#imageAccueil img
+{
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+#descriptionAccueil
+{
+    width: 35%;
+    position: absolute;
+    top: 12vw;
+    left: 10%;
+    color: white;
+}
+
+#descriptionAccueil h1
+{
+    font-family: robotoBlack;
+    
+}
+
+.nom
+{
+    color: rgb(49,161,192)
+}
+
+.boutonInfo
+{
+    text-decoration: none;
+    color: white;
+    padding: 11px;
+    background-color: rgb(49,161,192);
+    border-radius: 5px / 5px;
+    box-shadow: 0px 3px 0px rgb(35,136,164);
+    position: relative;
+    left: 10px;
+    top: 10px;  
+}
+
+#imageAccueil i
+{
+    font-size: 2.5em;
+    color: white;
+}
+
+#demiCercleG
+{
+    background-color: black;
+    opacity: 0.6;
+    display: inline-block;
+    width: 1.5em;
+    border-radius: 0em 3em 3em 0em;
+    padding: 0.4em;
+    position: relative;
+    bottom: 18vw;
+}
+
+#demiCercleD
+{
+    background-color: black;
+    opacity: 0.6;
+    display: inline-block;
+    width: 1.5em;
+    border-radius: 3em 0 0 3em;
+    padding: 0.4em;
+    float: right;
+    position: relative;
+    bottom: 18vw;
+    
+}
+
+.enTete
+{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.enTete h2
+{
+    font-family: robotoMedium, serif;
+    padding-top: 10px;
+}
+
+.pointBleu
+{
+    color: rgb(49,161,192);
+    font-size: 3em;
+}
+
+.enTete hr
+{
+    display: inline-block;
+    width: 15%;
+    opacity: 0.4;
+    position: relative;
+    bottom: 6px;
+}
+
+#infoService
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#infoService ul
+{
+    list-style-type: none;
+    width: 500px;
+    padding-bottom: 1.5em;
+}
+
+.img
+{
+    border: 1px solid rgb(200,200,200);
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    position: relative;
+    top: 6em;
+    right: 6.5em;
+}
+
+.img .fa
+{
+    transform: scale(2);
+    color: rgb(49,161,192);
+    position: relative;
+    top: 1.75em;
+    left: 1.75em;
+}
+
+.pointBleu2
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(49,161,192);
+    position: absolute;
+    left: 95%;
+    top: 44%;
+}
+
+#image
+{
+    width: 550px;
+}
+
+#image img
+{
+    width: 100%;
+}
+
+#projet
+{
+    background-color: rgb(230,230,230);  
+}
+
+#projet nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projet nav ul a
+{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(210,210,210);
+    color: rgb(101,105,110);
+}
+
+#projet nav ul li
+{
+    position: relative;
+}
+
+#projet nav ul a:hover 
+{
+    background-color: rgb(49,161,192);
+    box-shadow: 0px 3px 0px rgb(35,136,164);
+    color: white;
+}
+
+#projet nav ul li:hover .fas.fleche
+{
+    display: block;
+}
+
+#projet nav ul #allWorks
+{
+    background-color: rgb(49,161,192);
+    color: white;
+    box-shadow: 0px 3px 0px rgb(35,136,164);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#portFolio
+{
+    border-radius: 0px 10px 10px 0px
+}
+
+.fas.fleche.default
+{
+    display: block;
+}
+
+.fas.fleche
+{
+    display: none;
+    font-size: 30px;
+    color: rgb(35,136,164);
+    position: absolute;
+    top: 16px;
+    left: 50px;
+}
+
+#imageProjet
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin-top: 1em;
+}
+
+figure 
+{
+    position: relative;
+}
+
+figure img
+{
+    width: 330px;
+}
+
+figcaption
+{
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    background-color: rgb(50,50,50);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+figcaption h3
+{
+    color: white;
+    width: 30%;
+    margin: 0;
+    margin-top: 0.1em;
+    position: relative;
+    top: 0.2em;
+    left: 1.5em;
+    
+}
+
+figcaption p
+{
+    color: white;
+    width: 60%;
+    margin: 0.6em;
+    position: relative;
+    bottom: 0;
+    left: 1.5em;
+    
+}
+
+figcaption .far
+{
+    float: right;
+    position: relative;
+    right: 10%;
+    top: -15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 1em;
+    font-size: 0.8em;
+    color: white;
+    background-color: rgb(49,161,192);
+}
+
+@keyframes anim
+{
+    0%
+    {
+        transform: translateY(50px);
+    }
+    
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+figcaption:hover
+{
+    opacity: 0.7;
+    animation: anim 0.5s;
+}
+
+#iframe
+{
+    position: relative; 
+}
+
+#iframe iframe
+{
+    width: 100%;
+    height: 750px;
+}
+
+#formulaire
+{
+    background-color: rgb(230,230,230); 
+    width: 19em;
+    padding: 0em 1.5em 0em 1.5em;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 2;
+}
+
+#formulaire input[type="text"],input[type="email"], textarea
+{
+    width: 300px;
+}
+
+input[type=submit]
+{
+    background-color: rgb(49,161,192);
+    color: white;
+    padding: 3px 25px;
+    border-radius: 5px 5px;
+    box-shadow: 1px 3px 0px rgb(35,136,164);
+    border: none;
+}
+
+#bleu
+{
+    background-color: rgb(49,161,192);
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    top: 0;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+@media all and (max-width: 1024px)
+{
+    #descriptionAccueil
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: black;
+        text-align: center;
+        padding-bottom: 1.6em;
+        border-bottom: 1px solid grey;
+    }
+    
+    .boutonInfo
+    {
+        left: 0;
+    }
+    
+    #demiCercleG
+    {
+        display: none;
+    }
+    
+    #demiCercleD
+    {
+        display: none;
+    }
+    
+    #infoService
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #infoService ul
+    {
+        margin: 0;
+    }
+    
+    #image
+    { 
+        margin: auto;
+    }
+    
+    figure
+    {
+        margin: 0;
+    }
+    
+    #imageProjet
+    {
+        padding-top: 1em;
+    }
+    
+    figure img
+    {
+        width: 350px
+    }
+    
+    #iframe iframe
+    {
+        height: 450px;
+    }
+    
+    #bleu
+    {
+        height: 450px;
+    }
+    
+    #formulaire
+    {
+        margin: auto;
+        padding: 0.1em 2em;
+        position: relative;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    
+    h1
+    {
+        font-size: 1.7em;
+    }
+}
+
+@media all and (max-width: 720px)
+{
+    #menu
+    {
+        flex-direction: column;
+    }
+    
+    #menu nav ul a
+    {
+        padding: 0.1em;
+        padding-top: 0;
+    }
+    
+    h1
+    {
+        font-size: 3.8vw;
+    }
+    
+    #descriptionAccueil p
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .img
+    {
+        float: top;
+        top: 3em;
+        right: 0;
+        left: 40%
+    }
+    
+    .pointBleu2
+    {
+        left: 44%;
+        top: 94%;
+    }
+    
+    #infoService ul
+    {
+        padding-left: 0;
+        width: 80%
+    }
+    
+    #image
+    {
+        width: 80%;
+    }
+    
+    #projet nav ul a
+    {
+        padding: 2.5px 7.5px;
+    }
+    
+    .fas.fleche
+    {
+        top: 10px;
+        left: 27px;
+    }
+    
+    figcaption
+    {
+        opacity: 1;
+        transition-property: none;
+    }
+    
+    figcaption:hover
+    {
+        opacity: 1;
+        animation: none;
+    }
+}
