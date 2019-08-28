@@ -72,7 +72,6 @@ header
 
 #imageAccueil img
 {
-    position: relative;
     width: 100%;
 }
 
@@ -469,6 +468,11 @@ input[type=submit]
     }
     
     #demiCercleD
+    {
+        display: none;
+    }
+    
+    #slide
     {
         display: none;
     }
