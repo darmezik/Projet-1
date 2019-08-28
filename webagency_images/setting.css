@@ -17,9 +17,17 @@
 	font-style: normal;
 }
 
+@font-face
+{
+    font-family: 'robotoLight';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-    font-family: fontAwesome, serif;
+    font-family: robotoLight;
 	margin: 0;
 	padding: 0;
 }
@@ -66,14 +74,13 @@ header
 {
     position: relative;
     width: 100%;
-    top: 0;
 }
 
 #descriptionAccueil
 {
     width: 35%;
     position: absolute;
-    top: 12vw;
+    top: 9vw;
     left: 10%;
     color: white;
 }
@@ -102,6 +109,12 @@ header
     top: 10px;  
 }
 
+#imageAccueil
+{
+    position: relative;
+    overflow: hidden;
+}
+
 #imageAccueil i
 {
     font-size: 2.5em;
@@ -113,11 +126,14 @@ header
     background-color: black;
     opacity: 0.6;
     display: inline-block;
+    text-align: left;
     width: 1.5em;
-    border-radius: 0em 3em 3em 0em;
+    border-radius: 0 3em 3em 0;
     padding: 0.4em;
-    position: relative;
-    bottom: 18vw;
+    float: left;
+    position: absolute;
+    bottom: calc(17.1875vw - 18.39px);
+    left: -7px;
 }
 
 #demiCercleD
@@ -125,13 +141,23 @@ header
     background-color: black;
     opacity: 0.6;
     display: inline-block;
+    text-align: right;
     width: 1.5em;
     border-radius: 3em 0 0 3em;
     padding: 0.4em;
     float: right;
-    position: relative;
-    bottom: 18vw;
-    
+    position: absolute;
+    bottom: calc(17.1875vw - 18.39px);
+    right: -7px;   
+}
+
+#slide
+{
+    width: 30%;
+    height: 5px;
+    background-color: rgb(49,161,192);
+    position: absolute;
+    bottom: 3.8px;
 }
 
 .enTete
@@ -377,7 +403,7 @@ figcaption:hover
 
 #iframe iframe
 {
-    width: 100%;
+    width: 99.7%;
     height: 750px;
 }
 
