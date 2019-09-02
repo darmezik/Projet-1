@@ -184,7 +184,7 @@ header
     width: 15%;
     opacity: 0.4;
     position: relative;
-    bottom: 6px;
+    bottom: 8px;
 }
 
 #infoService
@@ -305,7 +305,7 @@ header
     font-size: 30px;
     color: rgb(35,136,164);
     position: absolute;
-    top: 16px;
+    top: 18px;
     left: 50px;
 }
 
