@@ -389,7 +389,7 @@ figcaption .far
     }
 }
 
-figcaption:hover
+figure:hover figcaption
 {
     opacity: 0.7;
     animation: anim 0.5s;
