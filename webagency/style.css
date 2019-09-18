@@ -41,15 +41,37 @@ body
 	padding: 0;
 }
 
+                    /*Polices*/
+
+h1
+{
+    font-family: robotoBlack, arial, serif;
+}
+
+h2
+{
+    font-family: robotoMedium, arial, serif;
+}
+
+h3
+{
+    font-family: robotoMedium, arial, serif;
+}
+
 p
 {
-    font-family: robotoLight, sans-serif, arial;
+    font-family: robotoLight, arial, sans-serif;
     font-size: 0.9em;
     font-weight: 600;
     color: rgb(109,113,118)
 }
 
-            /*Menu*/
+a
+{
+    font-family: robotoLight, sans-serif, arial;
+}
+
+                    /*Menu*/
 
 header
 {
@@ -71,7 +93,7 @@ header
     height: 80px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-     align-items: center;
+    align-items: center;
 }
 
 #menu nav ul
@@ -86,9 +108,11 @@ header
 
 #menu nav ul a
 {
+    font-weight: bold;
     text-decoration: none;
     color: grey;
-    padding: 1.8em;
+    padding: 1em;
+    padding-top: 1.8em;
 }
 
 #menu nav ul a:hover
@@ -98,7 +122,7 @@ header
 }
 
 
-            /*Section Accueil*/
+                    /*Section Accueil*/
             
 #imageAccueil img
 {
@@ -112,12 +136,6 @@ header
     top: 8vw;
     left: 15%;
     color: white;
-}
-
-#descriptionAccueil h1
-{
-    font-family: robotoBlack, arial, sans-serif;
-    
 }
 
 #descriptionAccueil p
@@ -136,7 +154,6 @@ header
 
 .boutonInfo
 {
-    font-family: robotoLight, sans-serif, arial;
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
@@ -213,20 +230,24 @@ header
     bottom: 3.8px;
 }
 
-            /*En-Tete Section service, projet*/
+                    /*En-Tete Section service, projet*/
 
 .enTete
 {
     text-align: center;
     margin: auto;
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .enTete h2
 {
-    font-family: robotoMedium, arial, sans-serif;
     padding-top: 10px;
     font-size: 2em;
+}
+
+.enTete p
+{
+    line-height: 25px;
 }
 
 .pointBleu
@@ -248,7 +269,7 @@ header
     opacity: 0.5; 
 }
 
-            /*Section Services*/
+                    /*Section Services*/
 
 #service
 {
@@ -282,8 +303,12 @@ header
 
 #infoService ul h3
 {
-    font-family: robotoMedium, arial, sans-serif;
     margin-bottom: -0.5em;
+}
+
+#infoService ul p
+{
+    line-height: 25px;
 }
 
 .img
@@ -331,7 +356,7 @@ header
     width: 100%;
 }
 
-            /*Section Projet*/
+                    /*Section Projet*/
 
 #projet
 {
@@ -525,7 +550,7 @@ figure:hover figcaption
     animation: anim 0.5s;
 }
 
-            /*Footer contact*/
+                    /*Footer contact*/
 
 #iframe
 {
@@ -573,6 +598,7 @@ figure:hover figcaption
 #formulaire p
 {
     font-size: 0.8em;
+    line-height: 20px;
 }
 
 #formulaire input[type="text"],input[type="email"], textarea
@@ -606,7 +632,7 @@ input[type=submit]
     opacity: 0.2;
 }
 
-            /*Responsive*/
+                    /*Responsive*/
 
 @media all and (max-width: 1024px)
 {
